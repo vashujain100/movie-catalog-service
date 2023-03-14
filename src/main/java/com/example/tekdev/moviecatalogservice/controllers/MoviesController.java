@@ -34,7 +34,7 @@ public class MoviesController {
     }
 
     @RequestMapping("{movieName}")
-    public Movie getMovie(@PathVariable String movieName){
+    public Movie getMovie(@PathVariable String movieName) {
         return movieService.getMovie(movieName);
     }
 

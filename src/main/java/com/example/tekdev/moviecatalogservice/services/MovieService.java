@@ -16,10 +16,6 @@ public class MovieService {
 
     public MovieService() {
         System.out.println("Movie service initiated");
-//        moviesRepository.save(new Movie.Builder("Inglorious Bastards")
-//                .description("A great movie by tarantino re imagining the time of the WW2")
-//                .rating(4.0)
-//                .build());
     }
 
     public List<Movie> getAllMovies() {
@@ -35,7 +31,7 @@ public class MovieService {
     }
 
     public Movie getMovie(String movieName) {
-       Optional<Movie> movie =  moviesRepository.findById(movieName);
-       return movie.get();
+        Optional<Movie> movie = moviesRepository.findById(movieName);
+        return movie.get();
     }
 }
